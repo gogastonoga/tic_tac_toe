@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kółko krzyżyk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="../node_modules/jquery/dist/jquery.js"></script> 
+</head>
+
+<body> 
+        
+      <div class="col-12 col-sm-6 content text-center">
+
+          <h1>Wybierz gracza</h1>
+          <button id="newPlayerX" class="newPlayer button">Gracz X</button>
+          <button id="newPlayerO" class="newPlayer button">Gracz O</button><br />
+          <button id="reset" class="button">RESET PLANSZY</button>
+          <button id="new-game" class="button">NOWA GRA</button>
+          <button id="remove-last-move" class="button">COFNIJ OSTATNI RUCH</button>
+<div style="padding-left: 115px;">
+          <div class="row text-center">
+            <div id ="1" class="box"></div>
+            <div id ="2" class="box"></div>
+            <div id ="3" class="box"></div>
+          </div>
+          <div class="row text-center">
+            <div id ="4" class="box"></div>
+            <div id ="5" class="box"></div>
+            <div id ="6" class="box"></div>
+          </div>
+          <div class="row text-center">
+            <div id ="7" class="box"></div>
+            <div id ="8" class="box"></div>
+            <div id ="9" class="box"></div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+    <h1>Statystyki:</h1>
+    <div class="row text-center">
+        <div class="col-4 stats" style="margin-left: 100px;"><b>Gracz X: </b><div id="statsX">0</div></div>
+        <div class="col-4 stats"><b>Gracz O: </b><div id="statsO">0</div></div>
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+<script src="../js/view.js"></script> 
+<script src="../js/winner-checker.js"></script> 
+<script src="../js/game.js"></script> 
+
+</html>
